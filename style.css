@@ -1,0 +1,83 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: white;
+}
+
+.navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* HERO (MOST IMPORTANT SECTION) */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* FEATURES SECTION */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ABOUT SECTION */
+.about {
+    text-align: center;
+    padding: 60px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+}
