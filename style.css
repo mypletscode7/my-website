@@ -1,83 +1,404 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI",sans-serif;
 }
 
-/* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    background: white;
+
+html{
+scroll-behavior:smooth;
 }
 
-.navbar a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: black;
+
+
+body{
+
+background:#f8fafc;
+color:#1e293b;
+
 }
 
-/* HERO (MOST IMPORTANT SECTION) */
-.hero {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-    color: white;
+
+
+
+/* NAVIGATION */
+
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 8%;
+
+background:white;
+
+position:sticky;
+top:0;
+
+z-index:100;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
 }
 
-.hero h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
+
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
+
+.logo span{
+
+color:#2563eb;
+
 }
 
-.hero button {
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    background: black;
-    color: white;
-    cursor: pointer;
+
+
+
+.nav-links{
+
+display:flex;
+gap:30px;
+list-style:none;
+
 }
 
-/* FEATURES SECTION */
-.features {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 60px;
+
+.nav-links a{
+
+text-decoration:none;
+color:#334155;
+
 }
 
-.card {
-    background: white;
-    padding: 30px;
-    width: 150px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+
+
+.nav-buttons button,
+.hero button,
+.contact button{
+
+padding:12px 25px;
+border:none;
+border-radius:25px;
+
+cursor:pointer;
+
 }
 
-/* ABOUT SECTION */
-.about {
-    text-align: center;
-    padding: 60px;
+
+
+
+.signup,
+.primary,
+.contact button{
+
+background:#2563eb;
+color:white;
+
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #f5f5f5;
+
+
+.login,
+.secondary{
+
+background:white;
+border:2px solid #2563eb!important;
+
+}
+
+
+
+
+.menu{
+
+display:none;
+
+}
+
+
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:100px 10%;
+
+}
+
+
+
+.hero-text{
+
+max-width:600px;
+
+}
+
+
+
+.hero h1{
+
+font-size:60px;
+
+}
+
+
+
+.hero p{
+
+font-size:20px;
+
+margin:25px 0;
+
+line-height:1.6;
+
+}
+
+
+
+.circle{
+
+height:300px;
+width:300px;
+
+border-radius:50%;
+
+background:#dbeafe;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+font-size:100px;
+
+}
+
+
+
+
+
+
+/* SECTIONS */
+
+
+section{
+
+padding:80px 10%;
+
+text-align:center;
+
+}
+
+
+
+h2{
+
+font-size:40px;
+
+margin-bottom:40px;
+
+}
+
+
+
+
+
+.mission,
+.feature-container{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:30px;
+
+}
+
+
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+background:#2563eb;
+
+color:white;
+
+}
+
+
+
+.counter{
+
+font-size:45px;
+
+}
+
+
+
+
+
+.question{
+
+background:white;
+
+margin:20px;
+
+padding:25px;
+
+border-radius:15px;
+
+}
+
+
+
+
+
+form{
+
+max-width:500px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+input,
+textarea{
+
+padding:15px;
+
+border-radius:10px;
+
+border:1px solid #ddd;
+
+}
+
+
+
+textarea{
+
+height:150px;
+
+}
+
+
+
+
+
+footer{
+
+background:#0f172a;
+
+color:white;
+
+padding:40px;
+
+text-align:center;
+
+}
+
+
+
+
+
+
+
+@media(max-width:800px){
+
+
+.nav-links{
+
+display:none;
+
+}
+
+
+
+.menu{
+
+display:block;
+
+}
+
+
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+
+
+.feature-container,
+.mission,
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+
 }
